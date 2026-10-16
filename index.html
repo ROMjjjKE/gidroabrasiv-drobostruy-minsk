@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Гидроабразивные технологии — дробеструйная обработка и полимерная покраска · Минск</title>
+<meta name="description" content="ООО «Гидроабразивные технологии»: дробеструйная обработка деталей в профессиональной камере (дробь Amasteel 0,1–0,2 мм) и полимерная покраска. Диски, суппорта, компоненты двигателя, рамы, баки, вилки, металлоконструкции до 1,2 м. Минск, Бетонный проезд 19а. +375 29 160-36-36">
+<script>window.__ok=0;</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F2F1F4;--paper2:#E9E7EF;--ink:#191621;--mut:#6F6A7B;--acc:#6B21A8;--accD:#4E167C;--accT:#EFE8F8;--lav:#B78FE8;--line:#DAD5E2;--dink:#EDEAF2;--dmut:#A7A1B5;--dline:#37303F;--dark:#131015;--dark2:#1B1720}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--paper);color:var(--ink);overflow-x:hidden;font-size:16.5px;line-height:1.6}
+h1,h2,h3,.disp{font-family:'Prosto One',Arial,sans-serif;font-weight:400;line-height:1.08;letter-spacing:.005em}
+.mono{font-family:ui-monospace,'Cascadia Mono','Courier New',monospace}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+::selection{background:var(--acc);color:#fff}
+.wm{position:fixed;inset:0;z-index:9998;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='460' height='300'%3E%3Ctext x='40' y='150' font-size='26' fill='%234338ca' opacity='.10' font-family='monospace' transform='rotate(-24 40 150)'%3ESiteFast.by%3C/text%3E%3C/svg%3E")}
+.wbadge{position:fixed;right:14px;bottom:14px;z-index:9999;background:#4338ca;color:#fff;font:700 11px/1 'Inter',sans-serif;padding:7px 10px;border-radius:6px;opacity:.85}
+.wrap{max-width:1200px;margin:0 auto;padding:0 26px}
+.cursor,.cursor-ring{display:none}
+@media(pointer:fine){
+.cursor{display:block;position:fixed;z-index:10000;width:8px;height:8px;border-radius:50%;background:var(--ink);pointer-events:none;transform:translate(-50%,-50%);mix-blend-mode:difference}
+.cursor-ring{display:block;position:fixed;z-index:10000;width:36px;height:36px;border-radius:50%;border:1.5px solid var(--ink);pointer-events:none;transform:translate(-50%,-50%);transition:width .25s,height .25s,opacity .25s;opacity:.5}
+.cursor-ring.big{width:64px;height:64px;opacity:.9}
+}
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(242,241,244,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.hrow{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 26px;max-width:1200px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:11px;min-width:0}
+.lname{font-family:'Prosto One',sans-serif;font-size:15px;letter-spacing:.03em;text-transform:uppercase;line-height:1.2}
+.lname span{color:var(--acc)}
+.lsub{font-size:10.5px;color:var(--mut);letter-spacing:.05em}
+nav{display:flex;gap:24px}
+nav a{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;position:relative;padding:4px 0}
+nav a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--acc);transition:width .3s}
+nav a:hover::after{width:100%}
+.hcta{display:flex;gap:10px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:13px;letter-spacing:.04em;padding:13px 22px;border-radius:999px;transition:.25s;cursor:pointer;border:none;text-transform:uppercase}
+.btn-acc{background:var(--acc);color:#fff}
+.btn-acc:hover{background:var(--accD)}
+.btn-wa{background:#25D366;color:#fff}
+.btn-wa:hover{background:#1FB95A}
+.btn-ghost{border:1.5px solid var(--ink);background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+.burger{display:none;background:none;border:1.5px solid var(--ink);border-radius:8px;padding:9px 10px;cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:var(--ink);margin:4px 0}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:130px 0 40px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-120px;right:-120px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,var(--accT) 0%,transparent 65%);pointer-events:none}
+.h-kicker{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--mut);margin-bottom:26px;display:flex;align-items:center;gap:12px}
+.h-kicker::before{content:'';width:44px;height:2px;background:var(--acc)}
+h1{font-size:clamp(30px,5.4vw,72px);text-transform:uppercase}
+h1 .hl{background:linear-gradient(transparent 64%,var(--lav) 64%)}
+h1 .th{color:var(--acc)}
+.h-sub{max-width:620px;margin-top:26px;font-size:17.5px;color:#3A3446}
+.h-sub b{color:var(--acc)}
+.h-meta{display:flex;gap:34px;margin-top:38px;flex-wrap:wrap}
+.hm{border-left:2px solid var(--line);padding-left:14px}
+.hm b{display:block;font-family:'Prosto One',sans-serif;font-size:19px;color:var(--acc)}
+.hm span{font-size:12px;color:var(--mut);letter-spacing:.04em;text-transform:uppercase}
+.h-fig{position:absolute;right:0;top:140px;width:min(430px,34vw)}
+.h-fig svg{width:100%;height:auto;display:block}
+.h-fig .fig-cap{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin-top:10px;text-align:right}
+.marquee{border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);overflow:hidden;background:var(--paper2);padding:16px 0;margin-top:70px}
+.mq-track{display:flex;width:max-content;animation:mq 28s linear infinite}
+.mq-track span{font-family:'Prosto One',sans-serif;font-size:15px;text-transform:uppercase;letter-spacing:.05em;padding:0 26px;white-space:nowrap;display:flex;align-items:center;gap:26px}
+.mq-track .ast{color:var(--acc)}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+section.blk{padding:110px 0;position:relative}
+.blk.dark{background:var(--dark);color:var(--dink)}
+.blk.tint{background:var(--paper2)}
+.kick{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--acc);margin-bottom:22px;display:flex;align-items:center;gap:12px}
+.blk.dark .kick{color:var(--lav)}
+.kick::before{content:'';width:44px;height:2px;background:currentColor}
+h2{font-size:clamp(28px,4.4vw,54px);margin-bottom:20px;text-transform:uppercase}
+h2 em{font-style:normal;color:var(--acc)}
+.blk.dark h2 em{color:var(--lav)}
+.fx{opacity:0;transform:translateY(26px)}
+body.js .fx{transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+body.js .fx.in{opacity:1;transform:none}
+.fx.d1{transition-delay:.08s}.fx.d2{transition-delay:.16s}.fx.d3{transition-delay:.24s}.fx.d4{transition-delay:.32s}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+.c4{grid-column:span 4}.c5{grid-column:span 5}.c6{grid-column:span 6}.c7{grid-column:span 7}.c8{grid-column:span 8}.c12{grid-column:span 12}
+.pcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;position:relative;overflow:hidden;transition:transform .35s cubic-bezier(.16,1,.3,1),box-shadow .35s}
+.pcard:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(107,33,168,.12)}
+.pcard .pc-n{font-size:11px;color:var(--mut);letter-spacing:.16em;font-weight:700}
+.pcard h3{font-size:20px;margin:12px 0 10px}
+.pcard p{font-size:14.5px;color:var(--mut);line-height:1.65}
+.pcard .pc-ico{position:absolute;top:20px;right:20px;width:44px;height:44px;border-radius:12px;background:var(--accT);display:flex;align-items:center;justify-content:center}
+/* камера wow */
+.cam{background:var(--dark);border-radius:22px;color:var(--dink);overflow:hidden;border:1px solid var(--dline)}
+.cam-head{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 24px;border-bottom:1px solid var(--dline);flex-wrap:wrap}
+.cam-head .t{font-family:'Prosto One',sans-serif;font-size:19px}
+.cam-head .mono{font-size:11px;color:var(--dmut)}
+.cam-tabs{display:flex;gap:8px;padding:14px 24px 0;flex-wrap:wrap;align-items:center}
+.ctab{font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:9px 16px;border-radius:999px;border:1.5px solid var(--dline);color:var(--dmut);cursor:pointer;transition:.2s}
+.ctab:hover{border-color:var(--lav)}
+.ctab.on{border-color:var(--lav);color:var(--dark);background:var(--lav)}
+.cam-btn{margin-left:auto;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:10px 20px;border-radius:999px;border:none;background:var(--acc);color:#fff;cursor:pointer;transition:.2s}
+.cam-btn:hover{background:var(--lav);color:var(--dark)}
+.cam-body{display:grid;grid-template-columns:1.6fr 1fr}
+.cam-svg{padding:18px}
+.cam-svg svg{width:100%;height:auto;display:block}
+.cam-side{border-left:1px solid var(--dline);display:flex;flex-direction:column}
+.cam-stat{flex:1;padding:18px 22px;border-bottom:1px solid var(--dline)}
+.cam-stat:last-child{border-bottom:none}
+.cam-stat .cs-l{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--dmut)}
+.cam-stat .cs-v{font-family:'Prosto One',sans-serif;font-size:26px;color:var(--lav);margin-top:4px}
+.cam-stat .cs-v small{font-size:13px;color:var(--dmut)}
+/* фото-полоса */
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ph{position:relative;border-radius:14px;overflow:hidden;background:var(--dark)}
+.ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s cubic-bezier(.16,1,.3,1);aspect-ratio:4/5}
+.ph:hover img{transform:scale(1.05)}
+.ph .ph-cap{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 12px;background:linear-gradient(transparent,rgba(19,16,21,.85));font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#EDEAF2;font-weight:700}
+.ph:first-child{grid-row:span 2}
+.ph:first-child img{aspect-ratio:auto;height:100%}
+/* полимер */
+.powd{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.pw{width:74px;height:74px;border-radius:50%;border:3px solid #fff;box-shadow:0 8px 20px rgba(0,0,0,.18);position:relative;transition:transform .3s}
+.pw:hover{transform:scale(1.14) rotate(8deg)}
+.pw::after{content:attr(data-n);position:absolute;left:50%;top:calc(100% + 8px);transform:translateX(-50%);font-size:9.5px;letter-spacing:.08em;color:var(--mut);text-transform:uppercase;white-space:nowrap;font-weight:700}
+/* faq */
+.faq details{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:20px 26px;font-weight:700;font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pl{flex:none;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--acc);display:flex;align-items:center;justify-content:center;font-weight:700;transition:.25s;font-size:15px;color:var(--acc)}
+.faq details[open] .pl{background:var(--acc);color:#fff;transform:rotate(45deg)}
+.faq .fa{padding:0 26px 20px;font-size:15.5px;color:var(--mut);line-height:1.7}
+/* контакты */
+.con{display:grid;grid-template-columns:1.1fr 1fr;gap:44px}
+.con h3{font-size:26px;margin-bottom:18px}
+.ctel a{display:flex;align-items:center;gap:14px;font-family:'Prosto One',sans-serif;font-size:19px;padding:16px 20px;border:1.5px solid var(--dline);border-radius:14px;transition:.25s;margin-bottom:12px}
+.ctel a:hover{border-color:var(--lav);background:rgba(183,143,232,.08)}
+.ctel a svg{flex:none}
+.crow{display:flex;gap:10px;font-size:14.5px;color:var(--dmut);margin-bottom:9px}
+.crow b{color:var(--dink)}
+form .frm{display:grid;gap:14px}
+form label{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dmut);display:block;margin-bottom:7px;font-weight:700}
+form input,form select,form textarea{width:100%;background:rgba(237,234,242,.06);border:1.5px solid var(--dline);border-radius:12px;padding:13px 15px;font-size:15.5px;font-family:'Inter',sans-serif;color:var(--dink)}
+form input:focus,form select:focus,form textarea:focus{outline:none;border-color:var(--lav)}
+form select{color:var(--dink)}form select option{color:var(--ink)}
+form textarea{min-height:100px;resize:vertical}
+.ok-msg{display:none;background:rgba(183,143,232,.15);color:var(--lav);border:1px solid var(--lav);border-radius:12px;padding:14px 16px;font-size:14.5px;font-weight:600}
+footer{background:var(--dark);color:#8E8899;padding:44px 0 120px;font-size:13.5px;border-top:1px solid var(--dline);margin-top:110px}
+.ft{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap;margin-bottom:22px}
+footer a:hover{color:var(--lav)}
+.wm-line{border-top:1px solid var(--dline);padding-top:18px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.wa-fab{position:fixed;left:16px;bottom:16px;z-index:9990;display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;font-weight:700;font-size:12px;padding:13px 20px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.wa-fab:hover{background:#1FB95A}
+@media(max-width:1000px){.h-fig{display:none}
+nav{position:absolute;top:100%;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;padding:14px 26px;display:none;gap:2px}
+nav.open{display:flex}
+nav a{font-size:14px;padding:10px 0}
+.burger{display:block}
+.hcta .btn-ghost{display:none}
+.cam-body{grid-template-columns:1fr}
+.cam-side{border-left:none;border-top:1px solid var(--dline)}
+.con{grid-template-columns:1fr}
+.photos{grid-template-columns:repeat(2,1fr)}
+.ph:first-child{grid-row:auto}
+.c4,.c5,.c6,.c7,.c8{grid-column:span 12}
+}
+@media(max-width:600px){.hcta{display:none}
+footer{padding-bottom:160px}
+section.blk{padding:70px 0}
+.photos{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body class="">
+<div class="wm"></div>
+<div class="wbadge">МАКЕТ: SiteFast.by</div>
+<div class="cursor" id="cur"></div><div class="cursor-ring" id="curring"></div>
+<header>
+  <div class="hrow">
+    <a href="#top" class="logo">
+      <svg width="40" height="40" viewBox="0 0 40 40"><circle cx="20" cy="20" r="17" fill="none" stroke="#6B21A8" stroke-width="3"/><circle cx="20" cy="20" r="4" fill="#B78FE8"/><g stroke="#B78FE8" stroke-width="2.4"><path d="M20 16v-8M20 24v8M16 20H8M24 20h8M17 17l-6-6M23 23l6 6M23 17l6-6M17 23l-6 6"/></g></svg>
+      <div><div class="lname">Гидро<span>абразивные</span> технологии</div><div class="lsub mono">дробеструй · полимерная покраска · минск</div></div>
+    </a>
+    <nav id="nav">
+      <a href="#pochemu">Почему мы</a>
+      <a href="#kamera">Камера</a>
+      <a href="#raboty">Работы</a>
+      <a href="#polimer">Полимер</a>
+      <a href="#voprosy">Вопросы</a>
+      <a href="#kontakty">Контакты</a>
+    </nav>
+    <div class="hcta">
+      <a href="tel:+375291603636" class="btn btn-ghost">+375 29 160-36-36</a>
+      <a href="#kontakty" class="btn btn-acc">Записаться</a>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap" style="position:relative">
+    <div class="h-kicker">Дробеструйная камера · Дробь Amasteel 0,1–0,2 мм · Минск</div>
+    <h1>Новый старт<br><span class="hl">вашим деталям</span> <span class="th">— в камере</span></h1>
+    <p class="h-sub">Ржавчина, старая краска и все виды загрязнений исчезают в профессиональной дробеструйной камере. Ровный чистый металл — <b>готовая основа под полимерную покраску</b> и вторую жизнь деталей вашего авто.</p>
+    <div class="h-meta">
+      <div class="hm"><b>0,1–0,2 мм</b><span>фракция дроби Amasteel</span></div>
+      <div class="hm"><b>до 1,2 м</b><span>любые металлоконструкции</span></div>
+      <div class="hm"><b>до 100%</b><span>удаление загрязнений</span></div>
+      <div class="hm"><b>+ полимер</b><span>покраска по спеццене</span></div>
+    </div>
+    <div class="h-fig">
+      <svg viewBox="0 0 460 400" fill="none">
+        <!-- колесный диск -->
+        <circle cx="230" cy="190" r="150" fill="#2A2431" stroke="#B78FE8" stroke-width="3"/>
+        <circle cx="230" cy="190" r="112" fill="#1B1720" stroke="#B78FE8" stroke-width="2"/>
+        <circle cx="230" cy="190" r="42" fill="#131015" stroke="#B78FE8" stroke-width="2"/>
+        <!-- спицы -->
+        <g stroke="#37303F" stroke-width="14" stroke-linecap="round">
+          <path d="M230 148v-46M230 232v46M188 190h-46M272 190h46M200 160l-33-33M260 220l33 33M260 160l33-33M200 220l-33 33"/>
+        </g>
+        <!-- пятна ржавчины (исчезают анимацией opacity) -->
+        <g id="rust" fill="#8A4B2A" opacity=".9">
+          <ellipse cx="180" cy="130" rx="22" ry="14" transform="rotate(-20 180 130)"><animate attributeName="opacity" values=".9;.9;.2;.9" dur="4.4s" repeatCount="indefinite"/></ellipse>
+          <ellipse cx="290" cy="240" rx="26" ry="16" transform="rotate(15 290 240)"><animate attributeName="opacity" values=".9;.9;.2;.9" dur="4.4s" repeatCount="indefinite"/></ellipse>
+          <ellipse cx="150" cy="250" rx="16" ry="11" transform="rotate(30 150 250)"><animate attributeName="opacity" values=".9;.9;.2;.9" dur="4.4s" repeatCount="indefinite"/></ellipse>
+          <ellipse cx="260" cy="110" rx="14" ry="10"><animate attributeName="opacity" values=".9;.9;.2;.9" dur="4.4s" repeatCount="indefinite"/></ellipse>
+        </g>
+        <!-- летящая дробь: частицы из сопла к диску -->
+        <g>
+          <rect x="380" y="60" width="54" height="20" rx="9" transform="rotate(38 380 60)" fill="#B78FE8"/>
+          <circle cx="330" cy="112" r="2.6" fill="#EDEAF2"><animate attributeName="cx" values="352;300" dur=".9s" repeatCount="indefinite"/><animate attributeName="cy" values="92;130" dur=".9s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur=".9s" repeatCount="indefinite"/></circle>
+          <circle cx="330" cy="112" r="2" fill="#EDEAF2"><animate attributeName="cx" values="356;296" dur="1.2s" repeatCount="indefinite"/><animate attributeName="cy" values="84;140" dur="1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.2s" repeatCount="indefinite"/></circle>
+          <circle cx="330" cy="112" r="1.6" fill="#B78FE8"><animate attributeName="cx" values="350;306" dur=".7s" repeatCount="indefinite"/><animate attributeName="cy" values="98;126" dur=".7s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur=".7s" repeatCount="indefinite"/></circle>
+          <circle cx="330" cy="112" r="2.2" fill="#EDEAF2"><animate attributeName="cx" values="354;290" dur="1.4s" repeatCount="indefinite"/><animate attributeName="cy" values="88;146" dur="1.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.4s" repeatCount="indefinite"/></circle>
+        </g>
+        <text x="24" y="42" fill="#8E8899" font-size="11" font-family="monospace">ДРОБЬ AMASTEEL · 0,1–0,2 ММ · РОВНАЯ ОБРАБОТКА</text>
+        <text x="24" y="382" fill="#8E8899" font-size="10" font-family="monospace">ДИСКИ · СУППОРТА · РАМЫ · БАКИ · ДО 1,2 М</text>
+      </svg>
+      <div class="fig-cap">дробеструйная камера · равномерная обработка сложных деталей</div>
+    </div>
+  </div>
+  <div class="marquee">
+    <div class="mq-track">
+      <span>Диски <i class="ast">✳</i> Суппорта <i class="ast">✳</i> Компоненты двигателя <i class="ast">✳</i> Рамы <i class="ast">✳</i> Баки <i class="ast">✳</i> Вилки <i class="ast">✳</i> Металлоконструкции до 1,2 м <i class="ast">✳</i> Полимерная покраска <i class="ast">✳</i> </span>
+      <span>Диски <i class="ast">✳</i> Суппорта <i class="ast">✳</i> Компоненты двигателя <i class="ast">✳</i> Рамы <i class="ast">✳</i> Баки <i class="ast">✳</i> Вилки <i class="ast">✳</i> Металлоконструкции до 1,2 м <i class="ast">✳</i> Полимерная покраска <i class="ast">✳</i> </span>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="pochemu" style="padding-top:70px">
+  <div class="wrap">
+    <div class="kick">Почему именно мы</div>
+    <h2>Три причины <em>заглянуть в камеру</em></h2>
+    <div class="grid">
+      <div class="pcard c4 fx"><span class="pc-n">01</span><div class="pc-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6B21A8" stroke-width="2"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M7 12h4M14 12h3"/><circle cx="8" cy="17" r="2"/><circle cx="16" cy="17" r="2"/></svg></div><h3>Профессиональная камера</h3><p>Оборудование даёт равномерную и качественную обработку даже самых сложных деталей. Дробь мелкой фракции немецкого бренда Amasteel — изначальная фракция 0,1–0,2 мм.</p></div>
+      <div class="pcard c4 fx d1"><span class="pc-n">02</span><div class="pc-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6B21A8" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-3.5 4.5-5 8-5s6.5 1.5 8 5"/></svg></div><h3>Опытные специалисты</h3><p>Команда с богатым опытом знает, как добиться идеального результата — и как обращаться с вашими деталями бережно. Безопасность и качество — наш приоритет.</p></div>
+      <div class="pcard c4 fx d2"><span class="pc-n">03</span><div class="pc-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6B21A8" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div><h3>Полное удаление загрязнений</h3><p>Не только ржавчина и старая краска: благодаря технологии исчезают все виды загрязнений. Металл выходит из камеры чистым — готовым под покрытие.</p></div>
+    </div>
+  </div>
+</section>
+<section class="blk" id="kamera" style="padding-top:0">
+  <div class="wrap">
+    <div class="cam fx">
+      <div class="cam-head">
+        <div class="t">Дробеструйная камера: нажмите ПУСК</div>
+        <div class="mono">СХЕМА · СТРУЯ ДРОБИ · ЧИСТЫЙ МЕТАЛЛ ПОПЕРЁК ПРОХОДА</div>
+      </div>
+      <div class="cam-tabs">
+        <div class="ctab on" data-p="wheel">Диск</div>
+        <div class="ctab" data-p="caliper">Суппорт</div>
+        <div class="ctab" data-p="frame">Рама</div>
+        <div class="ctab" data-p="tank">Бак</div>
+        <button class="cam-btn" id="camgo">▶ Пуск струи</button>
+      </div>
+      <div class="cam-body">
+        <div class="cam-svg">
+          <svg id="camsvg" viewBox="0 0 720 380" fill="none">
+            <defs>
+              <clipPath id="cleanmask"><rect id="cleanrect" x="60" y="40" width="0" height="300"/></clipPath>
+            </defs>
+            <rect width="720" height="380" fill="#131015"/>
+            <!-- сетка камеры -->
+            <g stroke="#1B1720" stroke-width="1">
+              <path d="M0 76h720M0 152h720M0 228h720M0 304h720M90 0v380M180 0v380M270 0v380M360 0v380M450 0v380M540 0v380M630 0v380"/>
+            </g>
+            <text x="18" y="28" fill="#8E8899" font-size="10.5" font-family="monospace">КАМЕРА · ДРОБЬ AMASTEEL 0,1–0,2 ММ</text>
+            <!-- группа детали (меняется табами) -->
+            <g id="part-rusty"></g>
+            <g id="part-clean" clip-path="url(#cleanmask)"></g>
+            <!-- сопло: едет по q -->
+            <g id="nozzle">
+              <rect x="-58" y="-11" width="52" height="22" rx="10" fill="#B78FE8"/>
+              <rect x="-6" y="-5" width="12" height="10" fill="#EDEAF2"/>
+              <circle id="sp1" r="2.6" fill="#EDEAF2" opacity="0"><animate attributeName="cx" values="-4;-34" dur=".5s" repeatCount="indefinite"/><animate attributeName="cy" values="0;12" dur=".5s" repeatCount="indefinite"/></circle>
+              <circle id="sp2" r="2" fill="#B78FE8" opacity="0"><animate attributeName="cx" values="-4;-36" dur=".7s" repeatCount="indefinite"/><animate attributeName="cy" values="0;-10" dur=".7s" repeatCount="indefinite"/></circle>
+              <circle id="sp3" r="1.7" fill="#EDEAF2" opacity="0"><animate attributeName="cx" values="-4;-30" dur=".4s" repeatCount="indefinite"/><animate attributeName="cy" values="0;5" dur=".4s" repeatCount="indefinite"/></circle>
+            </g>
+            <!-- штамп -->
+            <g id="stamp" opacity="0">
+              <rect x="60" y="322" width="330" height="34" rx="6" fill="none" stroke="#B78FE8" stroke-width="2"/>
+              <text x="74" y="344" fill="#B78FE8" font-size="12.5" font-weight="700" font-family="monospace">ЧИСТЫЙ МЕТАЛЛ · ГОТОВ К ПОЛИМЕРНОЙ ПОКРАСКЕ</text>
+            </g>
+          </svg>
+        </div>
+        <div class="cam-side">
+          <div class="cam-stat"><div class="cs-l">Чистота поверхности</div><div class="cs-v" id="cs-clean">0<small>%</small></div></div>
+          <div class="cam-stat"><div class="cs-l">Пройдено струёй</div><div class="cs-v" id="cs-pass">0<small> мм</small></div></div>
+          <div class="cam-stat"><div class="cs-l">Фракция дроби</div><div class="cs-v">0,1–0,2<small> мм · Amasteel</small></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blk tint" id="chto">
+  <div class="wrap">
+    <div class="kick">Что обрабатываем</div>
+    <h2>От диска <em>до рамы</em> — всё, что раньше было новым</h2>
+    <div class="grid">
+      <div class="pcard c4 fx"><span class="pc-n">01</span><h3>Диски</h3><p>Литые и штампованные: битум, ржавчина, слои старой краски — до ровного чистого металла под покраску.</p></div>
+      <div class="pcard c4 fx d1"><span class="pc-n">02</span><h3>Суппорта</h3><p>Сложная геометрия — не проблема: дробь мелкой фракции проходит в каждый уголок поверхности.</p></div>
+      <div class="pcard c4 fx d2"><span class="pc-n">03</span><h3>Компоненты двигателя</h3><p>Навесное и вспомогательное: чистый металл для сборки, восстановления и покраски.</p></div>
+      <div class="pcard c4 fx"><span class="pc-n">04</span><h3>Рамы</h3><p>Сварные рамы и профили — равномерная обработка по всей длине без «слепых зон».</p></div>
+      <div class="pcard c4 fx d1"><span class="pc-n">05</span><h3>Баки</h3><p>Топливные и прочие баки: изнутри и снаружи — под восстановление или покрытие.</p></div>
+      <div class="pcard c4 fx d2"><span class="pc-n">06</span><h3>Вилки</h3><p>Мото- и вело- вилки: аккуратная подготовка поверхности без порчи посадочных мест.</p></div>
+      <div class="pcard c8 fx"><span class="pc-n">07</span><h3>Другие детали вашего автомобиля</h3><p>Любые узлы и металлоконструкции длиной до 1,2 метра: кронштейны, кулаки, защитные элементы, трапеции, детали подвески. Если деталь влезает в камеру — она выйдет из неё чистой.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="raboty" style="padding-top:0">
+  <div class="wrap">
+    <div class="kick">наши работы</div>
+    <h2>До камеры <em>и после</em> неё</h2>
+    <div class="photos fx">
+      <div class="ph"><img src="w1.jpg" alt="Дробеструйная обработка диска — работа 1" loading="lazy"><div class="ph-cap">диски · до и после</div></div>
+      <div class="ph"><img src="w2.jpg" alt="Обработка деталей — работа 2" loading="lazy"><div class="ph-cap">детали авто</div></div>
+      <div class="ph"><img src="w3.jpg" alt="Обработка деталей — работа 3" loading="lazy"><div class="ph-cap">чистый металл</div></div>
+      <div class="ph"><img src="w4.jpg" alt="Обработка деталей — работа 4" loading="lazy"><div class="ph-cap">после камеры</div></div>
+      <div class="ph"><img src="w5.jpg" alt="Дробеструйная камера — работа 5" loading="lazy"><div class="ph-cap">в камере</div></div>
+      <div class="ph"><img src="w6.jpg" alt="Обработка деталей — работа 6" loading="lazy"><div class="ph-cap">суппорта</div></div>
+      <div class="ph"><img src="w7.jpg" alt="Обработка деталей — работа 7" loading="lazy"><div class="ph-cap">компоненты</div></div>
+      <div class="ph"><img src="w8.jpg" alt="Обработка деталей — работа 8" loading="lazy"><div class="ph-cap">полимерная покраска</div></div>
+      <div class="ph"><img src="w9.jpg" alt="Обработка деталей — работа 9" loading="lazy"><div class="ph-cap">готовые детали</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="blk dark" id="polimer">
+  <div class="wrap">
+    <div class="kick">полимерная покраска</div>
+    <h2>Вышли из камеры — <em>сразу под порошок</em></h2>
+    <p style="max-width:640px;color:var(--dmut);font-size:16px;margin-bottom:8px">Чистый металл из дробеструйной камеры — идеальная основа для полимерного покрытия. Покраска выполняется в полимерной камере на партнёрском предприятии <b style="color:var(--dink)">по специальной цене</b>.</p>
+    <div class="powd fx">
+      <div class="pw" data-n="графит" style="background:#3A3A3F"></div>
+      <div class="pw" data-n="чёрный мат" style="background:#17161A"></div>
+      <div class="pw" data-n="серебро" style="background:#BFC3C9"></div>
+      <div class="pw" data-n="белый" style="background:#F2F2F4"></div>
+      <div class="pw" data-n="красный" style="background:#B22B27"></div>
+      <div class="pw" data-n="синий" style="background:#1E4E9C"></div>
+      <div class="pw" data-n="зелёный" style="background:#2C6E49"></div>
+      <div class="pw" data-n="оранжевый" style="background:#D9641E"></div>
+      <div class="pw" data-n="лиловый" style="background:#6B21A8"></div>
+    </div>
+    <p style="margin-top:56px;font-size:13px;color:var(--dmut)">Палитра порошковых покрытий — для примера; доступный оттенок под ваш проект подтвердим при записи. Дробеструйная подготовка + полимер — самое долговечное сочетание для деталей авто.</p>
+  </div>
+</section>
+<section class="blk" id="voprosy">
+  <div class="wrap">
+    <div class="kick">вопросы</div>
+    <h2>Частые вопросы</h2>
+    <div class="faq fx">
+      <details><summary>Дробеструйная обработка не испортит деталь?<span class="pl">+</span></summary><div class="fa">Дробь очень мелкой фракции (0,1–0,2 мм, немецкий бренд Amasteel) снимает загрязнения, а не металл: поверхность остаётся ровной, без «травления» и сколов. Команда работает с бережным отношением к деталям — это наш приоритет.</div></details>
+      <details><summary>Чем дробеструй лучше пескоструя?<span class="pl">+</span></summary><div class="fa">Мелкая металлическая дробь бьёт точнее и мягнее песка: нет Embedded-абразива в порах, меньше пыли, более ровная поверхность под покрытие. В профессиональной камере обработка идёт равномерно по всей детали, включая сложные формы.</div></details>
+      <details><summary>Какие размеры деталей принимаете?<span class="pl">+</span></summary><div class="fa">Диски, суппорта, компоненты двигателя, рамы, баки, вилки и любые металлоконструкции длиной до 1,2 метра. Если сомневаетесь — позвоните: подскажем сразу.</div></details>
+      <details><summary>Можно сразу покрасить после обработки?<span class="pl">+</span></summary><div class="fa">Да: полимерная покраска выполняется в полимерной камере на партнёрском предприятии по специальной цене. Чистый металл из дробеструйной камеры — лучшая основа для порошкового покрытия.</div></details>
+      <details><summary>Уберёте ржавчину и старую краску полностью?<span class="pl">+</span></summary><div class="fa">Полное удаление загрязнений — то, для чего создана технология: не только ржавчина и старая краска, но и все виды загрязнений исчезают. Металл выходит чистым до «голой» основы.</div></details>
+      <details><summary>Где вы находитесь и как записаться?<span class="pl">+</span></summary><div class="fa">Минск, Бетонный проезд 19а (Минский район). Записывайтесь по телефону +375 29 160-36-36 — подскажем сроки и цену по вашей детали.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="blk dark" id="kontakty">
+  <div class="wrap">
+    <div class="kick">контакты</div>
+    <div class="con">
+      <div class="fx">
+        <h3>Запишите деталь<br>в новый старт</h3>
+        <p style="color:var(--dmut);max-width:440px;margin-bottom:26px;font-size:15.5px">Расскажите, что за деталь — сориентируем по срокам и стоимости обработки. При желании сразу запланируем полимерную покраску по специальной цене.</p>
+        <div class="ctel">
+          <a href="tel:+375291603636"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B78FE8" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg>+375 29 160-36-36</a>
+        </div>
+        <div class="crow"><b>Исполнитель:</b><span>ООО «Гидроабразивные технологии»</span></div>
+        <div class="crow"><b>УНП:</b><span>193744526</span></div>
+        <div class="crow"><b>Адрес:</b><span>220036, г. Минск, Бетонный проезд, 19а, пом. 5</span></div>
+        <div class="crow"><b>Контактное лицо:</b><span>Илья Александрович</span></div>
+        <div class="crow"><b>Услуги:</b><span>дробеструйная обработка · полимерная покраска</span></div>
+      </div>
+      <div class="fx d1">
+        <form id="jform" novalidate>
+          <div class="frm">
+            <div><label for="f-name">Ваше имя</label><input id="f-name" name="name" required placeholder="Как к вам обращаться"></div>
+            <div><label for="f-tel">Телефон</label><input id="f-tel" name="tel" required placeholder="+375 __ ___-__-__"></div>
+            <div><label for="f-type">Что за деталь</label>
+              <select id="f-type" name="type">
+                <option>Диски</option>
+                <option>Суппорта</option>
+                <option>Компоненты двигателя</option>
+                <option>Рама</option>
+                <option>Бак</option>
+                <option>Вилка</option>
+                <option>Другая деталь / металлоконструкция</option>
+                <option>Ещё не знаю — нужна консультация</option>
+              </select>
+            </div>
+            <div><label for="f-msg">Комментарий</label><textarea id="f-msg" name="msg" placeholder="Например: 4 диска R17, нужна очистка под покраску"></textarea></div>
+            <button class="btn btn-acc" type="submit" style="width:100%">Записаться на обработку</button>
+            <div class="ok-msg" id="fok">Спасибо! Перезвоню, сориентирую по срокам и цене.</div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <div class="lname" style="color:var(--dink)">Гидро<span>абразивные</span> технологии</div>
+        <div class="mono" style="font-size:11px;margin-top:6px;color:#8E8899">дробеструйная камера · полимерная покраска · минск</div>
+      </div>
+      <div style="display:flex;gap:22px;flex-wrap:wrap">
+        <a href="#pochemu">Почему мы</a><a href="#kamera">Камера</a><a href="#raboty">Работы</a><a href="#voprosy">Вопросы</a><a href="#kontakty">Контакты</a>
+      </div>
+      <div><a href="tel:+375291603636" style="color:var(--lav);font-family:'Prosto One',sans-serif">+375 29 160-36-36</a></div>
+    </div>
+    <div class="wm-line mono" style="font-size:11px">
+      <span>ООО «Гидроабразивные технологии» · УНП 193744526 · Бетонный проезд 19а, Минск</span>
+      <span>Макет подготовлен SiteFast.by</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-fab" href="https://wa.me/375291603636" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="17" height="17" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.4 14.1c-.2.7-1.3 1.3-1.8 1.3-.5.1-1.1.1-1.8-.1a13 13 0 01-4.2-2.6 11 11 0 01-2.3-3.5c-.2-.6-.3-1.2-.1-1.7.2-.5.9-1.2 1.4-1.2.3 0 .6 0 .8.6l.7 1.6c.1.2 0 .5-.1.7l-.4.6c-.1.2-.2.3 0 .6.5.9 1.1 1.6 2 2.2.6.5 1.1.8 1.6 1 .3.1.5 0 .6-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.5.2.4.5.4.7z"/></svg>
+  <span>WhatsApp</span>
+</a>
+<div class="mob-cta" style="display:none;position:fixed;left:0;right:0;bottom:0;z-index:9991;background:var(--paper);border-top:1.5px solid var(--ink)">
+  <div style="display:grid;grid-template-columns:1fr 1fr">
+    <a href="tel:+375291603636" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 8px;font-weight:700;font-size:14px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#191621" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg>Позвонить</a>
+    <a href="https://wa.me/375291603636" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 8px;font-weight:700;font-size:14px;border-left:1.5px solid var(--ink)"><svg width="15" height="15" viewBox="0 0 24 24" fill="#25D366"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2z"/></svg>WhatsApp</a>
+  </div>
+</div>
+<script>
+/* ===== reveal polling ===== */
+document.body.classList.add('js');
+var revealedAll=false;
+function scanReveal(){
+  if(revealedAll) return;
+  var els=document.querySelectorAll('.fx:not(.in)');
+  var vh=window.innerHeight||800;
+  for(var i=0;i<els.length;i++){
+    var r=els[i].getBoundingClientRect();
+    if(r.top<vh-50&&r.bottom>0) els[i].classList.add('in');
+  }
+  if(els.length===0) revealedAll=true;
+}
+setInterval(scanReveal,400); scanReveal();
+document.getElementById('burger').addEventListener('click',function(){ document.getElementById('nav').classList.toggle('open'); });
+document.querySelectorAll('#nav a').forEach(function(a){ a.addEventListener('click',function(){ document.getElementById('nav').classList.remove('open'); }); });
+
+/* ===== курсор ===== */
+(function(){
+  var c=document.getElementById('cur'), r=document.getElementById('curring');
+  if(!c||!r||!window.matchMedia('(pointer:fine)').matches) return;
+  var x=-100,y=-100,rx=-100,ry=-100;
+  document.addEventListener('mousemove',function(e){ x=e.clientX; y=e.clientY; c.style.left=x+'px'; c.style.top=y+'px'; });
+  function loop(){ rx+=(x-rx)*.14; ry+=(y-ry)*.14; r.style.left=rx+'px'; r.style.top=ry+'px'; requestAnimationFrame(loop); }
+  loop();
+  document.querySelectorAll('a,button,summary,.pcard,.pw,.ctab').forEach(function(el){
+    el.addEventListener('mouseenter',function(){ r.classList.add('big'); });
+    el.addEventListener('mouseleave',function(){ r.classList.remove('big'); });
+  });
+})();
+
+/* ===== ДРОБЕСТРУЙНАЯ КАМЕРА: детали + струя по q ===== */
+(function(){
+  var svg=document.getElementById('camsvg'); if(!svg) return;
+  function E(id){ return document.getElementById(id); }
+  var rusty=E('part-rusty'), clean=E('part-clean'), rect=E('cleanrect'),
+      nozzle=E('nozzle'), stamp=E('stamp'),
+      csClean=E('cs-clean'), csPass=E('cs-pass'),
+      tabs=document.querySelectorAll('.ctab'), goBtn=document.getElementById('camgo');
+  /* «ржавые» и «чистые» версии деталей: 60..460 — рабочая зона, сопло едет 60→460 */
+  var PARTS={
+    wheel:{
+      rusty:'<circle cx="260" cy="190" r="115" fill="#4A3A2A" stroke="#8A5A32" stroke-width="3"/><circle cx="260" cy="190" r="115" fill="none" stroke="#5E4630" stroke-width="10" stroke-dasharray="20 14"/><circle cx="260" cy="190" r="70" fill="#3A2E22" stroke="#5E4630" stroke-width="2"/><circle cx="260" cy="190" r="26" fill="#2C2318"/><g fill="#5E4630"><circle cx="260" cy="120" r="9"/><circle cx="310" cy="215" r="9"/><circle cx="210" cy="215" r="9"/></g>',
+      clean:'<circle cx="260" cy="190" r="115" fill="#B9BDC4" stroke="#E8EAF0" stroke-width="3"/><circle cx="260" cy="190" r="70" fill="#9CA1AA" stroke="#E8EAF0" stroke-width="2"/><circle cx="260" cy="190" r="26" fill="#7E838D"/><g fill="#D5D8DE"><circle cx="260" cy="120" r="9"/><circle cx="310" cy="215" r="9"/><circle cx="210" cy="215" r="9"/></g>'
+    },
+    caliper:{
+      rusty:'<path d="M120 150 h240 a30 30 0 0130 30 v60 a30 30 0 01-30 30 h-240 a30 30 0 01-30-30 v-60 a30 30 0 0130-30z" fill="#4A3A2A" stroke="#8A5A32" stroke-width="3"/><path d="M180 190 h160 M180 220 h160" stroke="#5E4630" stroke-width="7" stroke-dasharray="16 12"/><circle cx="390" cy="210" r="18" fill="#3A2E22" stroke="#5E4630" stroke-width="3"/>',
+      clean:'<path d="M120 150 h240 a30 30 0 0130 30 v60 a30 30 0 01-30 30 h-240 a30 30 0 01-30-30 v-60 a30 30 0 0130-30z" fill="#B9BDC4" stroke="#E8EAF0" stroke-width="3"/><path d="M180 190 h160 M180 220 h160" stroke="#9CA1AA" stroke-width="7"/><circle cx="390" cy="210" r="18" fill="#7E838D" stroke="#E8EAF0" stroke-width="3"/>'
+    },
+    frame:{
+      rusty:'<path d="M70 130 h350 l50 50 v90 h-60 v-60 h-280 v90 h-60z" fill="#4A3A2A" stroke="#8A5A32" stroke-width="3"/><path d="M120 155 h290 M110 250 h310" stroke="#5E4630" stroke-width="6" stroke-dasharray="14 10"/><circle cx="90" cy="270" r="12" fill="#3A2E22"/>',
+      clean:'<path d="M70 130 h350 l50 50 v90 h-60 v-60 h-280 v90 h-60z" fill="#B9BDC4" stroke="#E8EAF0" stroke-width="3"/><path d="M120 155 h290 M110 250 h310" stroke="#9CA1AA" stroke-width="6"/><circle cx="90" cy="270" r="12" fill="#7E838D" stroke="#E8EAF0" stroke-width="3"/>'
+    },
+    tank:{
+      rusty:'<ellipse cx="180" cy="190" rx="70" ry="120" fill="#4A3A2A" stroke="#8A5A32" stroke-width="3"/><rect x="180" y="70" width="180" height="240" fill="#4A3A2A" stroke="#8A5A32" stroke-width="3"/><ellipse cx="360" cy="190" rx="70" ry="120" fill="#4A3A2A" stroke="#8A5A32" stroke-width="3"/><path d="M180 130 h180 M180 250 h180" stroke="#5E4630" stroke-width="7" stroke-dasharray="18 12"/><ellipse cx="180" cy="80" rx="30" ry="10" fill="#3A2E22"/>',
+      clean:'<ellipse cx="180" cy="190" rx="70" ry="120" fill="#B9BDC4" stroke="#E8EAF0" stroke-width="3"/><rect x="180" y="70" width="180" height="240" fill="#B9BDC4" stroke="#E8EAF0" stroke-width="3"/><ellipse cx="360" cy="190" rx="70" ry="120" fill="#B9BDC4" stroke="#E8EAF0" stroke-width="3"/><path d="M180 130 h180 M180 250 h180" stroke="#9CA1AA" stroke-width="7"/><ellipse cx="180" cy="80" rx="30" ry="10" fill="#7E838D" stroke="#E8EAF0" stroke-width="2"/>'
+    }
+  };
+  var CYCLE=5400, HOLD=12000, T0=Date.now(), phase='run', holdStart=0, running=true, forced=null;
+  var part='wheel';
+  function setPart(p){
+    part=p;
+    rusty.innerHTML=PARTS[p].rusty;
+    clean.innerHTML=PARTS[p].clean;
+    for(var i=0;i<tabs.length;i++) tabs[i].classList.toggle('on', tabs[i].getAttribute('data-p')===p);
+  }
+  function renderQ(q){
+    /* сопло едет 60 → 460 */
+    var nx=60+q*400;
+    nozzle.setAttribute('transform','translate('+(nx+20)+',190)');
+    /* чистая зона открывается за соплом */
+    rect.setAttribute('width', (nx-60).toFixed(1));
+    /* дробь летит, пока струя в работе */
+    var sp=(q>0.02&&q<0.98)?1:0;
+    ['sp1','sp2','sp3'].forEach(function(id){ E(id).setAttribute('opacity',sp); });
+    /* счётчики */
+    csClean.innerHTML=Math.round(q*100)+'<small>%</small>';
+    csPass.innerHTML=Math.round(q*400)+'<small> мм</small>';
+    /* штамп */
+    stamp.setAttribute('opacity', q>=0.97?1:0);
+  }
+  function cycle(){
+    if(!running) return;
+    if(forced!==null){ renderQ(forced); return; }
+    var now=Date.now();
+    if(phase==='run'){
+      var q=Math.min(1,(now-T0)/CYCLE);
+      renderQ(q);
+      if(q>=1){ phase='hold'; holdStart=now; }
+    } else if(now-holdStart>HOLD){ phase='run'; T0=now; }
+  }
+  setPart('wheel'); renderQ(0);
+  setInterval(cycle,40);
+  /* пауза вне вьюпорта */
+  setInterval(function(){
+    var r=svg.getBoundingClientRect();
+    running=(r.top<(window.innerHeight||800)&&r.bottom>0);
+  },600);
+  /* табы: смена детали + мгновенный новый цикл */
+  for(var t=0;t<tabs.length;t++){
+    (function(idx){
+      tabs[t].addEventListener('click',function(){
+        setPart(tabs[idx].getAttribute('data-p'));
+        phase='run'; T0=Date.now(); forced=null;
+      });
+    })(t);
+  }
+  /* ПУСК: прогон струи заново с ускорением */
+  goBtn.addEventListener('click',function(){
+    phase='run'; T0=Date.now(); forced=null;
+    var t0=Date.now(), D=2600;
+    forced=0;
+    var iv=setInterval(function(){
+      var k=(Date.now()-t0)/D;
+      if(k>=1){ clearInterval(iv); forced=null; phase='hold'; holdStart=Date.now(); renderQ(1); return; }
+      renderQ(k);
+    },30);
+  });
+})();
+
+/* ===== форма ===== */
+(function(){
+  var f=document.getElementById('jform'); if(!f) return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var ok=true;
+    ['f-name','f-tel'].forEach(function(id){
+      var el=document.getElementById(id);
+      if(!el.value.trim()){ ok=false; el.style.borderColor='#E0492E'; }
+      else el.style.borderColor='';
+    });
+    if(!ok) return;
+    document.getElementById('fok').style.display='block';
+    f.reset();
+  });
+})();
+/* мобильная нижняя панель */
+if(window.matchMedia('(max-width:600px)').matches){ document.querySelector('.mob-cta').style.display='block'; }
+</script>
+<script>window.__ok=1;</script>
+</body>
+</html>
